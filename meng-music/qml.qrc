@@ -2,7 +2,8 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>MainForm.ui.qml</file>
-        <file>image/Location_bk.png</file>
         <file>image/timg.jpeg</file>
+        <file>MyButton.qml</file>
+        <file>image/kugou_UI/title/close_hover.png</file>
     </qresource>
 </RCC>

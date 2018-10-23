@@ -8,7 +8,7 @@ Rectangle{
     Image {
             id: rocket
             anchors.fill:parent
-            source: "image/Location_bk.png"
+//            source: "image/timg.jpeg"
        }
 //    flags:QtWindow | Qt.FramelessWindowHint   //qu chu biao ti lan
 
@@ -34,6 +34,20 @@ Rectangle{
             maxBtn.onClicked();
         }
     }
+
+    /*button*/
+    MyButton{
+        id:closeBtn;
+        anchors.right: parent.right
+//        flat:true
+//        font{
+//            family:"Ubuntu"
+//            pixelSize:titleBar.height/2
+//        }
+//        text:"\uf410"
+        nomal_Image:"image/kugou_UI/title/close_hover.png"
+    }
+
 
     /*tuo ye bian huan chuang ti chi cun*/
     MouseArea{
@@ -113,6 +127,6 @@ Rectangle{
                         mainWindow.setHeight((mainWindow.height+spacing.y)>minHeight?(mainWindow.height+spacing.y):minHeight);
                         break;
             }
-        }
+        }      
     }
 }
