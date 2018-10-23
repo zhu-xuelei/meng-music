@@ -1,11 +1,15 @@
-import QtQuick 2.7
+import QtQuick 2.3
 import QtQuick.Window 2.2
 
 Rectangle{
     id:mainWindow
     width: 900
     height: 600
-    color:"#231234"
+    Image {
+            id: rocket
+            anchors.fill:parent
+            source: "image/Location_bk.png"
+       }
 //    flags:QtWindow | Qt.FramelessWindowHint   //qu chu biao ti lan
 
     /*biao ti lan tuo ye yi dong*/
@@ -109,8 +113,6 @@ Rectangle{
                         mainWindow.setHeight((mainWindow.height+spacing.y)>minHeight?(mainWindow.height+spacing.y):minHeight);
                         break;
             }
-
         }
-
     }
 }
